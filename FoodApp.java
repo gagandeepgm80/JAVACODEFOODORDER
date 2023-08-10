@@ -1,3 +1,4 @@
+//Scanner calss
 import java.util.Scanner;
 class Food
 {

@@ -73,6 +73,7 @@ class FoodApp
 					 case 3:
 						 System.out.println("TO PAY A BILL");
 					      f.bill();
+						  break;
 					 case 4:
 						 System.out.println("EXIT");
 					    
