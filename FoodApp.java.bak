@@ -1,7 +1,8 @@
+
 import java.util.Scanner;
 class Food
 {
-int pay = 0;
+ static int pay = 0;
 void totalamount(int amt)
 	{
 	pay = pay + amt;
@@ -10,7 +11,22 @@ void totalamount(int amt)
 
 void bill()
 {
- System.out.println(" THE TOTAL BILL IS :" + pay);
+ System.out.println(" THE TOTAL BILL IS :" +"----------------------"+pay);
+}
+
+ static void gst()
+{
+	
+	int gst = 10;
+	System.out.println("THE GST RATE  IS :" +"----------------------"+gst+"%");
+	 int Amount = (pay * gst)/100;
+	System.out.println("GST AMOUNT IS "+"---------------------- "+Amount);
+	int x = pay + Amount;
+	System.out.println("--------------------------------------");
+	System.out.println("--------------------------------------");
+	System.out.println("TOTAL BILL:" + "-----------------------"+ x);
+	System.out.println("__________________________________________");
+	System.out.println("__________________________________________");
 }
 }
 
@@ -73,11 +89,12 @@ class FoodApp
 					 case 3:
 						 System.out.println("TO PAY A BILL");
 					      f.bill();
+						  f.gst();
 						  break;
 					 case 4:
 						 System.out.println("EXIT");
 					    
-                          break;
+                      break;
 					 default :
 						 System.out.println("INVALID CHOICE");
 				 break;
